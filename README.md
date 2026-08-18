@@ -69,9 +69,21 @@ Therefore, **you must download these dependencies manually** before compiling.
 
 #### Setup Instructions:
 1. Create a folder named `libs/` in the root of the project.
-2. Download the required dependencies (a pre-packaged zip file containing them is provided in the **GitHub Releases** tab of this repository).
-3. Extract the `.jar` files into the `libs/` folder.
-4. You can now compile the project normally (e.g. `gradlew build`).
+2. Download the exact versions of the following `.jar` files and place them inside the `libs/` folder. You can find them on their official pages:
+
+   * **Actually Additions** (v1.12.2-r152) - [CurseForge Page](https://www.curseforge.com/minecraft/mc-mods/actually-additions/files)
+   * **Applied Energistics 2** (rv6-stable-7) - [CurseForge Page](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2/files)
+   * **Biomes O' Plenty** (v1.12.2-7.0.1.2445) - [CurseForge Page](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty/files)
+   * **BuildCraft** (v7.99.24.8) - [CurseForge Page](https://www.curseforge.com/minecraft/mc-mods/buildcraft/files)
+   * **IC2 Classic** (v1.12-1.5.8) - [CurseForge Page](https://www.curseforge.com/minecraft/mc-mods/ic2-classic/files)
+   * **JourneyMap** (v1.12.2-5.7.1) - [CurseForge Page](https://www.curseforge.com/minecraft/mc-mods/journeymap/files)
+   * **Just Enough Items (JEI)** (v4.16.1.1003) - [CurseForge Page](https://www.curseforge.com/minecraft/mc-mods/jei/files)
+   * **Mekanism** (v1.12.2-9.8.3.390) - [CurseForge Page](https://www.curseforge.com/minecraft/mc-mods/mekanism/files)
+   * **PlayerAPI** (v1.12.2-1.0) - [CurseForge Page (Mirror)](https://www.curseforge.com/minecraft/mc-mods/playerapi)
+   * **RedstoneFlux** (v1.12-2.1.1.1) - [CurseForge Page](https://www.curseforge.com/minecraft/mc-mods/redstone-flux/files)
+
+3. Alternatively, a pre-packaged zip file containing them may be provided in the **GitHub Releases** tab of this repository.
+4. Once the files are in the `libs/` folder, you can compile the project normally (e.g., `./gradlew build`).
 
 **Credits and Gratitude:**
 Full credits and our utmost gratitude go to the original creators of these amazing mods. This project relies on their incredible work:
