@@ -63,9 +63,15 @@ After all Prerequisites and cloning is finished, simply import the project into 
 
 ### About Dependencies
 
-This repository includes a `libs/` folder containing multiple external `.jar` dependencies. While we attempted to migrate these dependencies to download dynamically from active Maven repositories (like CurseMaven) during the build process, the aggressive Cloudflare protections on CurseForge block automatic downloads from Java/Gradle, causing the compilation to fail.
+To compile this project, several external `.jar` dependencies are required. While we attempted to migrate these dependencies to download dynamically from active Maven repositories (like CurseMaven) during the build process, the aggressive Cloudflare protections on CurseForge block automatic downloads from Java/Gradle, causing the compilation to fail.
 
-To ensure that anyone cloning this repository can immediately compile the project without errors, these dependencies must be included locally. We sincerely apologize for including these binaries directly in our repository. These files are included here solely as an unavoidable workaround to keep the legacy 1.12.2 project functional and compilable today.
+Therefore, **you must download these dependencies manually** before compiling.
+
+#### Setup Instructions:
+1. Create a folder named `libs/` in the root of the project.
+2. Download the required dependencies (a pre-packaged zip file containing them is provided in the **GitHub Releases** tab of this repository).
+3. Extract the `.jar` files into the `libs/` folder.
+4. You can now compile the project normally (e.g. `gradlew build`).
 
 **Credits and Gratitude:**
 Full credits and our utmost gratitude go to the original creators of these amazing mods. This project relies on their incredible work:
