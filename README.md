@@ -60,3 +60,7 @@ Get the plugin on [Gradle Plugin Repository](https://plugins.gradle.org/plugin/n
 ### Import
 
 After all Prerequisites and cloning is finished, simply import the project into your IDE.
+
+### About Dependencies
+
+This repository includes a `libs/` folder containing external `.jar` dependencies required to compile the mod. This is an intentional deviation from standard Git practices (which usually discourage committing binaries). Because this is an older 1.12.2 project, several of the original Maven repositories that hosted these dependencies have permanently gone offline. By including the `.jars` directly in the repository, we ensure that anyone cloning this project can immediately compile it without having to hunt down dead links or missing files.
