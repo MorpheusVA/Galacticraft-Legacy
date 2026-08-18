@@ -63,4 +63,6 @@ After all Prerequisites and cloning is finished, simply import the project into 
 
 ### About Dependencies
 
-This repository includes a `libs/` folder containing external `.jar` dependencies required to compile the mod. This is an intentional deviation from standard Git practices (which usually discourage committing binaries). Because this is an older 1.12.2 project, several of the original Maven repositories that hosted these dependencies have permanently gone offline. By including the `.jars` directly in the repository, we ensure that anyone cloning this project can immediately compile it without having to hunt down dead links or missing files.
+This repository includes a `libs/` folder containing multiple external `.jar` dependencies. While we attempted to migrate these dependencies to download dynamically from active Maven repositories (like CurseMaven) during the build process, the aggressive Cloudflare protections on CurseForge block automatic downloads from Java/Gradle, causing the compilation to fail.
+
+To ensure that anyone cloning this repository can immediately compile the project without errors, these dependencies must be included locally. We sincerely apologize for including these binaries directly in our repository. Full credits and our utmost gratitude go to **Divisor** for creating the amazing **PlayerAPI**, and to all other respective mod authors. These files are included here solely as an unavoidable workaround to keep the legacy 1.12.2 project functional and compilable today.
