@@ -1,6 +1,11 @@
 pluginManagement {
     repositories {
-		maven { url = 'https://maven.galacticraft.net/repository/internal-plugins/' }
-        maven { url = 'https://maven.galacticraft.net/repository/gradle/' }
+        gradlePluginPortal()
+        mavenCentral()
+        maven { url = 'https://maven.minecraftforge.net/' }
     }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
 }
